@@ -13,7 +13,7 @@ return array(
 	'preload'=>array('log'),
 
 	// default controller
-	'defaultController' => 'index',
+	'defaultController' => 'video',
 
 	// autoloading model and component classes
 	'import'=>array(
@@ -66,6 +66,17 @@ return array(
 		'errorHandler'=>array(
 			// use 'site/error' action to display errors
 			'errorAction'=>'site/error',
+		),
+		'urlManager' => array(
+			'showScriptName' => false,
+            'urlFormat'      => 'path',
+            'rules'          => array(
+                // 	'<controller:\w+>/<id:\d+>'=>'<controller>/view',
+                '<controller:\w+>/<action:\w+>/<id:\w+>'      => '<controller>/<action>',
+                '<controller:\w+>/<action:\w+>/<id:\w+>.html' => '<controller>/<action>',
+                '<controller:\w+>/<action:\w+>'               => '<controller>/<action>',
+                '<controller:\w+>/<action:\w+>.html'          => '<controller>/<action>',
+            ),
 		),
 		'log'=>array(
 			'class'=>'CLogRouter',

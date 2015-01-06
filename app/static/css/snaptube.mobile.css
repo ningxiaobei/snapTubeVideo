@@ -1,0 +1,67 @@
+/* 
+	reset css
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+.clearfix:after {
+    clear: both;
+}
+.clearfix {
+    *zoom: 1;
+}
+
+.sub-nav{ border-bottom: .3em solid #979797; position: relative; z-index:999;}
+.sub-nav li{ float: left; padding: 0 0 .4em 0;}
+.sub-nav li.active{border-bottom: .3em solid #a54a3f;}
+.sub-nav li:hover{border-bottom: .3em solid #a54a3f;}
+.sub-nav li:first-child a{border-left: 0;}
+.sub-nav li>a{display: block; padding: .6em 1em; color: #777;font-size: 1em; border-left: 1px solid #777; outline: none;}
+.sub-nav .icon{display: inline-block;}
+.sub-nav .arrow-down { width:0; height:0; border-left:.4em solid transparent; border-right:.4em solid transparent; border-top:.6em solid #777; margin-left: .3em;}
